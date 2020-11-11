@@ -26,4 +26,4 @@ The resulting brainfuck program uses only two cells of memory, one for storing a
 
 ### Program explanation
 
-here I'll comment the code
+here I'll comment the code.
