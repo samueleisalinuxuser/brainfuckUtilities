@@ -1,6 +1,6 @@
 # brainfuckTextTranslator
 
-brainfuckTextTranslator is a small program that can traslate texts in brainfuck
+brainfuckTextTranslator is a small programm that can traslate texts in brainfuck
 
 ### Usage
 ```
@@ -16,21 +16,15 @@ optional arguments:
 ```
 #### Example
 ```
-python brainfuckTextTranslator.py -t "I program in brainfuck"
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
------------------------------------------.>++++++++++++++++[<+++++>-]<.++.
----.--------.+++++++++++.-----------------.>++++[<+++>-]<.
->-----------[<------->+]<.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++.
->-------------[<------>+]<.
->+++++++++++[<++++++>-]<.
-++++++++++++++++.
------------------.++++++++.+++++.--------.>+++++[<+++>-]<.>---------[<-->+]<.++++++++.
+python brainfuckTextTranslator.py -t "Hello World!"
+>+++++++++[<++++++++>-]<.+++++++++++++++++++++++++++++.+++++++..+++.
+-------------------------------------------------------------------------------.
+>+++++++++++[<+++++>-]<.>++++++++[<+++>-]<.+++.>---[<-->+]<.
+--------.-------------------------------------------------------------------.
 ```
 
-### Memory usage
-The resulting brainfuck program uses only two cells of memory, one for storing and printing charactersand one for calculating and passing values to the first one.
-
-### Program explanation
-
-here I'll comment the code.
+### How the program works
+The aim of the program is to create a fast and light brainfuck program by reducing the used cells to only 2:
+- cell 0 that will store datas
+- cell 1 that will do calculations and that will move datas into the cell 0 from where they will be printed
+This makes the program very fast and light as it is only necessary to update the value of a single cell a little as to get all the ascii values of all the characters the program have to print.
