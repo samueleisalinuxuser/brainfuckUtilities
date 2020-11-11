@@ -1,6 +1,6 @@
 # brainfuckTextTranslator
 
-brainfuckTextTranslator is a small programm that can traslate texts in brainfuck
+brainfuckTextTranslator is a small program that can traslate texts in brainfuck
 
 ### Usage
 ```
